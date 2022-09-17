@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> -->
+    <title>Ankur Sarkar - Portfolio</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <style>
+      path {
+        stroke-dasharray: 3102.680908203125px;
+        stroke-dashoffset: 3102.680908203125px;
+        animation: LineAnimation 7s ease forwards infinite;
+      }
+      @keyframes LineAnimation {
+        to {
+          stroke-dashoffset: 0px;
+        }
+      }
+      .loader > svg {
+        width: 40%;
+        height: 20%;
+        margin: auto;
+        display: grid;
+      }
+      .loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="root">
+      <div class="loader">
+        <svg
+          width="587"
+          height="261"
+          viewBox="0 0 587 261"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M63 259.5L244 15.5L250.5 8.5L258 6.5L165 259.5L179.5 203.5L170 163.5L145.5 129.5L94.5 98L49.5 91.5L20 108.5L2 138.5V163.5L11.5 183.5C11.5 183.5 94.5 227 179.5 235L199 222L240.5 158.5L207.5 247L243.5 188.5L270 158.5H287L281.5 193L265.5 235L270 247L287 243L307.5 219.5L396.5 1L296 255L315.5 229L374 170.5L390.5 158.5L348.5 197.5L354.5 213L359 243L373.5 247L396.5 231.5L407.5 199.5L425.5 160.5L429 158.5L412.5 193L397.5 237L415 243L438 225L454 191L469.5 158.5L470.5 160L439 229V243L468 235L493 197.5L505 158.5L515 170L537 178.5L554.5 174L574.5 165L551.5 182L537 206L534 231.5L548.5 243L574.5 229L585 216"
+            stroke="black"
+            stroke-width="7"
+          />
+        </svg>
+      </div>
+    </div>
   </body>
 </html>
